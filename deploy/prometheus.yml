@@ -1,0 +1,6 @@
+global:
+  scrape_interval: 5s
+scrape_configs:
+  - job_name: kvstore
+    static_configs:
+      - targets: ["kv1:8080", "kv2:8080", "kv3:8080"]
